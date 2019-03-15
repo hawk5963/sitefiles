@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<link rel = "stylesheet" href = "style.css"/>
+		<title>
+			Mike Hawkins Personal Website
+		</title>
+	</head>
+	<body>
+		<h1 id = "centernormal">About Me</h1>
+
+		<!--
+		<p>Here's some <span class = "blue">white </span>text</p>
+		-->
+
+		<p id = "p1" I am currently a Senior at the University of St. Thomas in St. Paul, MN, graduating this May with a BS in Computer Science.</p>
+		<img src="mike.jpg" alt="Picture of a leprauchaun" height="auto" width="auto" />
+		<p id = "p2">During the summer of 2018, I interned at OATI in Minneapolis, MN as a Junior Software Developer on the WebTrader team. In April of 2016, I earned the Eagle Scout Award from the Boy Scouts of America. I enjoy Computer Science as a hobby as well as a profession, but I also enjoy playing video games, listening to music, creating music, and nordic skiing in my free time.</p>
+		<h2 id = "centernormal">News</h2>
+
+		<div id="skillLoader"></div>
+		<script>
+		var xmlhttp = new XMLHttpRequest();
+		var url = "skills.json";
+
+		xmlhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		        var myArr = JSON.parse(this.responseText);
+		        myFunction(myArr);
+		    }
+		};
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+
+		function myFunction(arr) {
+		    var out = "";
+		    var i;
+		    for(i = 0; i < arr.length; i++) {
+		        out += '<a href="' + arr[i].url + '">' +
+		        arr[i].display + '</a><br>';
+		    }
+		    document.getElementById("skillLoader").innerHTML = out;
+		}
+		</script>
+		<h2 id = "centertable">Table of Links</h2>
+		<table id = "serialkillerfont">
+
+			<tr>
+				<td>Click <a href="resume.html">here</a> to go to my resume.</td>
+			</tr>
+			<tr>
+				<td>Click <a href="projects.html">here</a> to go to my recent projects.</td>
+			</tr>
+
+		</table>
+
+	</body>
+
+</html>

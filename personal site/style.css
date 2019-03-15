@@ -1,0 +1,134 @@
+*{
+	margin: 0 auto;
+}
+.blue {
+	font-weight: bold;
+	color: rgb(255,255,255);
+}
+.floatleft{
+	float: left;
+	width: 200px;
+	background: green;
+}
+.rel{
+	position: relative;
+	left: 80px;
+	top: 20px
+	height: 100px;
+	background-color: green;
+}
+.abs{
+	position: absolute;
+	left: 80px;
+	top: 20px
+	height: 100px;
+	background-color: green;
+}
+.trail {
+    position: absolute;
+    height: 10px; width: 10px;
+    border-radius: 6px;
+    background: rgb(10,198,205);
+  }
+#test {
+	font-family: "Times New Roman", serif;
+	font-weight: bold;
+	color: rgb(255,0,10);
+}
+#serialkillerfont {
+	font-family: "Times New Roman", serif;
+	font-weight: bold;
+	color: green;
+	/*top, right, bottom, left*/
+	padding: 1px 1px;
+	/*pushes the picture (border and all)*/
+	/*this makes the box*/
+	border-top: 3px solid #0c3396; 
+	border-right: 3px solid #0c3396; 
+	border-bottom: 3px solid #0c3396; 
+	border-left: 3px solid #0c3396; 
+}
+#blackfont {
+	font-family: "Times New Roman", serif;
+	font-weight: bold;
+	color: green;
+	/*top, right, bottom, left*/
+	padding: 1px 1px;
+	/*pushes the picture (border and all)*/
+	/*this makes the box*/
+	border-top: 3px solid #000000; 
+	border-right: 3px solid #000000; 
+	border-bottom: 3px solid #000000; 
+	border-left: 3px solid #000000; 
+}
+#sidebar{
+	width: 30%;
+	min-width: 200px
+}
+#centertable{
+	font-family: "Times New Roman", serif;
+	font-weight: bold;
+	color: #0c3396;
+	text-align: center;
+}
+#centernormal{
+	font-family: "Times New Roman", serif;
+	font-weight: bold;
+	color: #0c3396;
+	text-align: center;
+}
+#paddedbox{
+	/*top, right, bottom, left*/
+	padding: 1px 1px;
+	/*pushes the picture (border and all)*/
+	margin-left: 250px;
+	/*this makes the box*/
+	border-top: 3px solid #0c3396; 
+	border-right: 3px solid #0c3396; 
+	border-bottom: 3px solid #0c3396; 
+	border-left: 3px solid #0c3396; 
+}
+#borderbox{
+	border: 1px dotted #000000; 
+	border-top: 3px solid #0c3396; 
+	border-right: 3px solid #0c3396; 
+	border-bottom: 3px solid #0c3396; 
+	border-left: 3px solid #0c3396; 
+	
+}
+body{
+	color: #0c3396;
+	background-color:#000000;
+	width: 900px;
+}
+html{
+	font-size: 100.0%; /*default size is 16 px */
+}
+h1,h2{
+	font-family: "Times New Roman", serif;
+	font-size: 2rem; /* 2x the HTML size */
+	font-weight: bold;
+}
+
+p{
+	font: 1rem Times New Roman, serif;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+
+/*
+This is for targeting links within paragraphs, hence the "a" following the "p".
+
+p a {
+	color: rgb(245,70,200);
+}
+
+*/
+
+/* this makes it so if we hover over the link it turns red and italic.*/
+a:hover{
+	font-style: italic;
+	color:#FF1B1B;
+}
+
