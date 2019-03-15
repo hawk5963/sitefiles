@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<link rel = "stylesheet" href = "style.css"/>
+		<title>
+			Mike Hawkins Projects
+		</title>
+	</head>
+	<body>
+		<h1 id = "centernormal">Projects</h1>
+		<table id = "serialkillerfont">
+			<tr>
+				<td><image id = "modable" src="mgs.jpg" alt = "Minnesota Geological Survey (Senior Capstone Project)" width = "250", height = "250"><image id = "modable" src="hs.png" alt = "A Psychology Trivia game I created in high school" width = "250", height = "250"><image id = "modable" src="ep.jpg" alt = "My Eagle Scout project involved repairing computers for a non-profit." width = "250", height = "250"></td>
+			</tr>
+			<tr>
+				<td><image id = "modable" src="lz.png" alt = "A space shooter game I created during high school" width = "250", height = "250"><image id = "modable" src="osshell.png" alt = "An OSShell project from my Operating Systems class" width = "250", height = "250"><image id = "modable" src="oati.jpg" alt = "OATI WebTrader, a software that I worked on during my internship." width = "250", height = "250"></td>
+			</tr>
+
+		</table>
+		<table id = "blackfont">
+			<tr>
+				<td>Click <a href="index.html">here</a> to return to my main page.</td>
+			</tr>
+			<tr>
+				<td>Click <a href="resume.html">here</a> to go to my resume.</td>
+			</tr>
+
+		</table>
+
+		<!--This is as close to a lightbox as this is going to get-->
+
+		<div id="modal_obj" class="modal">
+
+		  <!--spanning should get close to the desired effect-->
+		  <span class="close">&times;</span>
+
+		  <img class="modal-content" id="i1">
+
+		  <div id="description"></div>
+		</div>
+
+		<script>
+			var modal = document.getElementById('modal_obj');
+
+			var image = document.getElementById('modable');
+
+			var modalImage = document.getElementById("i1");
+
+			var descText = document.getElementById("description");
+
+			image.onclick = function(){
+
+				modal.style.display = "block";
+
+				modalImage.src = this.src;
+
+				//it'll be easier just to use the alternate text as the description
+				descText.innerHTML = this.alt;
+			}
+
+			//close the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			//make the modal go away
+			span.onclick = function() {
+			  modal.style.display = "none";
+			}
+		</script>
+	</body>
+</html>
